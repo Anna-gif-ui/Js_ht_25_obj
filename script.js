@@ -23,17 +23,9 @@
     let time =  (distance / dreamCar.speed)
 
     if (time % 4 > 0 || time == 0)
-        time +=  Math.floor(time / 4)
-       
+        time +=  Math.floor(time / 4)  
     else
         time +=  (time / 4 - 1)
-    
-//    let por = 2115
-//    let nor = por  % 4
-//    console.log(nor)
-//    let kor = Math.floor(por / 4)
-//    console.log(kor)
-
 
     document.write(`Чтобы преодолеть расстояние ${distance}км на ${dreamCar.producer} ${dreamCar.model} Вам понадобится ${time.toFixed(2)} ч`); 
 
